@@ -1,0 +1,14 @@
+HELO:<[127.0.0.1]>
+FROM:<test.docker-laravel@mail.com>
+TO:<test@example.com>
+
+From: Docker-Laravel <test.docker-laravel@mail.com>
+To: test@example.com
+Subject: test
+Message-ID: <1f362eaf89727a3dd557d4a9b97ae44f@mail.com>
+MIME-Version: 1.0
+Date: Sun, 02 Oct 2022 06:19:03 +0000
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+test mail
