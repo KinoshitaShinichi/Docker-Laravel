@@ -23,7 +23,7 @@ services:
       - ./data:/var/lib/mysql
     restart: always
     environment:
-      MYSQL_DATABASE: sample
+      MYSQL_DATABASE: docker-laravel
       MYSQL_USER: user
       MYSQL_PASSWORD: password
       MYSQL_ROOT_PASSWORD: root

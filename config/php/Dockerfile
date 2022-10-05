@@ -1,5 +1,5 @@
 # image
-FROM php:8.0-apache
+FROM php:8.1-apache
 
 # Set php
 COPY ./php.ini /usr/local/etc/php/
@@ -23,7 +23,7 @@ RUN apt-get clean
 RUN curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer
 
 # node
-RUN apt-get install -y nodejs npm && npm install n -g
+RUN apt-get install -y nodejs npm && npm install n -g && n 16
 
 # yarn
 RUN wget https://github.com/yarnpkg/yarn/releases/download/v1.22.19/yarn_1.22.19_all.deb
